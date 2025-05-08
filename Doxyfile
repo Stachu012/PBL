@@ -1,0 +1,78 @@
+# Doxyfile 1.9.8
+
+# Projekt
+PROJECT_NAME           = "Zoo - System klas zwierząt"
+PROJECT_BRIEF          = "Przykładowy projekt w C++ z klasami Zwierze, Gady, Ssaki itd."
+PROJECT_NUMBER         = "1.0"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+OUTPUT_LANGUAGE        = Polish
+USE_MDFILE_AS_MAINPAGE = 
+
+# Pliki wejściowe
+INPUT                  = .
+RECURSIVE              = NO
+FILE_PATTERNS          = *.cpp *.h
+
+# Wykluczenia
+EXCLUDE                = docs
+
+# Generowanie
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+
+# HTML
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+
+# Dokumentacja kodu
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+EXTRACT_LOCAL_METHODS  = YES
+
+# Komentarze
+JAVADOC_AUTOBRIEF      = YES
+MULTILINE_CPP_IS_BRIEF = YES
+QT_AUTOBRIEF           = YES
+
+# Ustawienia tagów
+OPTIMIZE_OUTPUT_FOR_C  = NO
+OPTIMIZE_OUTPUT_JAVA   = NO
+OPTIMIZE_FOR_FORTRAN   = NO
+OPTIMIZE_OUTPUT_VHDL   = NO
+
+# Przestrzenie nazw
+ENABLE_PREPROCESSING   = YES
+MACRO_EXPANSION        = YES
+EXPAND_ONLY_PREDEF     = NO
+SEARCH_INCLUDES        = YES
+INCLUDE_PATH           = .
+INCLUDE_FILE_PATTERNS  = 
+
+# Symboliczne definicje
+PREDEFINED             = DOXYGEN_SHOULD_SKIP_THIS
+
+# Sortowanie
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+SORT_GROUP_NAMES       = YES
+SORT_BY_SCOPE_NAME     = YES
+
+# Grafy
+HAVE_DOT               = YES
+CLASS_DIAGRAMS         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_NUM_THREADS        = 2
+
+# Wykrywanie C++
+EXTENSION_MAPPING      = cpp=C++
+
+# Warnunki
+WARN_IF_UNDOCUMENTED   = YES
+WARN_NO_PARAMDOC       = YES
